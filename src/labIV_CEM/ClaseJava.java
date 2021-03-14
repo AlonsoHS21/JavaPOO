@@ -9,7 +9,7 @@ package labIV_CEM;
 		// and setters (por eso se pone private)
 		private int id;
 		private String nombre;
-		static int cont = 0;
+		static int cont = 0; //Maneja los ID automaticamente
 		
 		//Constructor que no recibe nada
 		public ClaseJava() {
@@ -42,6 +42,11 @@ package labIV_CEM;
 		@Override
 		public String toString() {
 			return "ClaseJava [id = " + id + ", nombre = " + nombre + "]";
+		}
+		
+		//Devuelve el proximo ID que se va a generar
+		public static int proxID() { //Con static ya no tengo que crear un objeto
+			return cont+1; //Para el return cont++ no funciona pero si cont+1
 		}
 		
 		

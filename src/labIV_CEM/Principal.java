@@ -27,20 +27,34 @@ public class Principal {
 		*/
 		
 		// VIDEO 2 
+		/* Esta es una forma de agregar datos 
 		ClaseJava art1 = new ClaseJava();
-		//art1.setId(1);
 		art1.setNombre("Don Ramon");
 		System.out.println(art1.toString());
 		
 		ClaseJava art2 = new ClaseJava();
-		//art2.setId(2);
 		art2.setNombre("Señor Barriga");
 		System.out.println(art2.toString());
 		
 		ClaseJava art3 = new ClaseJava();
-		//art3.setId(3);
 		art3.setNombre("Jirafales");
 		System.out.println(art3.toString());
+		
+		System.out.println("El proximo ID que se va a crear es: " + ClaseJava.proxID());
+		
+		*/
+		
+		/* Esta es otra forma */
+		ClaseJava[] vArt = new ClaseJava[3]; //Por los 3 articulos que voy a agregar
+		vArt[0] = new ClaseJava("Don Ramon");
+		vArt[1] = new ClaseJava("Señor Barriga");
+		vArt[2] = new ClaseJava("Jirafales");
+		
+		//Mostramos con un bucle for todos los elementos de array
+		for(int x = 0;x < 3; x++) {
+			System.out.println(vArt[x].toString());
+		}
+		System.out.println("El proximo ID que se va a crear es: " + ClaseJava.proxID());
 		
 	}
 
