@@ -9,15 +9,18 @@ package labIV_CEM;
 		// and setters (por eso se pone private)
 		private int id;
 		private String nombre;
+		static int cont = 0;
 		
 		//Constructor que no recibe nada
 		public ClaseJava() {
-			id = 0;
+			cont++;
+			id = cont;
 			nombre = "Sin nombre";
 		}
 		//Constructor que recibe un parametro
-		public ClaseJava(String _nombre,int _id) {
-			id = _id;
+		public ClaseJava(String _nombre) { //Borre el int id Mira Video 2
+			cont++;
+			id = cont;
 			nombre = _nombre;
 		}
 		
