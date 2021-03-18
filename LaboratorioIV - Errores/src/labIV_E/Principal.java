@@ -23,6 +23,16 @@ public class Principal {
 		*/
 		//No me da error hasta que compile y ejecute
 		
-	}
-
+		/* TIPOS DE EXCEPCIONES */
+		int num1 = 9;
+		int num2 = 0;
+		
+		try{
+			int res = num1 / num2;
+			System.out.println(res);
+		}
+		catch(Exception e) {
+			System.out.println("El mensaje de error es el siguiente: " + e.toString());
+		}
+  }
 }
