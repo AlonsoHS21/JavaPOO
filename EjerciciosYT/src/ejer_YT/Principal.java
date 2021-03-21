@@ -43,10 +43,10 @@ public class Principal {
 					System.out.print("\nEl resultado es: " + resultadoFinal + "\n");
 				}break;
 				case 7:{
-					
+					ce.muestraCantidadDeSemanasDiasHoras(sn);
 				}break;
 				case 8:{
-					
+					ce.devuelveRaizDeLasEcuacionesDeSegundoGrado(sn);
 				}break;
 				case 9:{
 					salir = true;

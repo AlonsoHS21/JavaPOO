@@ -82,4 +82,32 @@ public class ClaseEjercicios {
 			resultado = (float) Math.pow(resultado,2);
 			return resultado;
 		}
+		public void muestraCantidadDeSemanasDiasHoras(Scanner sn) {
+			int semana,dia,hora;
+			String nombreEmpleado;
+			System.out.println("Construir un programa que, dado un numero total de horas, devuelve el numero de semanas,dias y horas equivalentes");
+			System.out.print("Ingrese el nombre del empleado: ");
+			nombreEmpleado = sn.next();
+			System.out.print("\nIngrese la cantidad de horas trabajadas por el empleado " + nombreEmpleado + " : ");
+			hora = sn.nextInt();
+			semana = hora/168;
+			dia = (hora - (semana*168))/24;
+			hora = hora - ((semana*168) + (dia*24));
+			//840 + 144 = 984
+			System.out.print("\nEl empleado " + nombreEmpleado + " trabajo " + semana + " semanas, " + dia + " dias, " + hora + " hora/s ");
+		}
+		public void devuelveRaizDeLasEcuacionesDeSegundoGrado(Scanner sn) {
+			float a,b,c,incognita1,incognita2;
+			System.out.println("Construir un programa que calcule y muestre por pantalla las raices de la ecuacion de segundo grado de coeficientes reales");
+			System.out.print("Ingrese a: ");
+			a = sn.nextFloat();
+			System.out.print("\nIngrese b: ");
+			b = sn.nextFloat();
+			System.out.print("\nIngrese c: ");
+			c = sn.nextFloat();
+			
+			incognita1 = (float) ((-(b) + (Math.sqrt((Math.pow(b,2) - (4*a*c))))) / (2*a));
+			incognita2 = (float) ((-(b) - (Math.sqrt((Math.pow(b,2) - (4*a*c))))) / (2*a));
+			System.out.print("El valor de la incognita X1 es : " + incognita1 + "y de la incognita X2 es: " + incognita2);
+		}
 }
