@@ -32,10 +32,53 @@ public class Principal {
 			case 6:{
 				cec.mostrarParOImpar(sn);
 			}break;
+			case 7:{
+				cec.mostrarMayorAMenor(sn);
+			}break;
+			case 8:{
+				int cantidadDeCifras = cec.devuelveCifrasNumero(sn);
+				if(cantidadDeCifras != 0) {
+					System.out.print("El numero ingresado tiene: " + cantidadDeCifras + " cifras\n");
+				}
+				else{
+					System.out.print("\nEl numero ingresado no esta dentro del rango que se pide\n");
+				}
+			}break;
+			case 9:{
+				boolean fechaCorrecta = cec.determinaLafechaCorrecta(sn);
+				if(fechaCorrecta) {
+					System.out.print("\nLa fecha ingresada es correcta\n");
+				}
+				else {
+					System.out.print("\nLa fecha ingresada no es correcta\n");
+				}
+			}break;
+			case 10:{
+				boolean fechaCorrecta = cec.determinaLafechaCorrecta(sn);
+				if(fechaCorrecta) {
+					System.out.print("\nLa fecha ingresada es correcta\n");
+				}
+				else {
+					System.out.print("\nLa fecha ingresada no es correcta\n");
+				}
+			}break;
+			case 11:{
+				float resultado = cec.calculadora(sn);
+				System.out.print("\nEl resultado es: " + resultado + "\n");
+			}break;
+			case 12:{
+				cec.clasificadorDeNotas(sn);
+			}break;
+			case 13:{
+				cec.menuCajero(sn);
+			}break;
+			case 14:{
+				cec.menuUnidadesDeMedidaDeMasa(sn);
+			}break;
 			default:{
 				System.out.println("Opcion no valida");
 			}
-		}
+		 }
 		}
 		System.out.println("Fin del programa :)");
 	}
