@@ -16,9 +16,11 @@ public class Principal {
 		ArticuloGimnasio artG = new ArticuloGimnasio();
 		artG.setNombre("Mancuerna");
 		artG.setPeso(100);
+		System.out.println(Articulo.proxID());
 		
 		System.out.println(artG.toString());
 		System.out.println(artG.convierteKilosAGramos());
+	
 	}
 
 }
